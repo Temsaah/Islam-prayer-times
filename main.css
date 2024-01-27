@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Readex+Pro:wght@300;400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* font-family: "Poppins", sans-serif; */
+  font-family: "Readex Pro", sans-serif;
+}
+
+body {
+  background-color: #212a3e;
+}
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.prayer-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
+}
+
+.prayer-container div {
+  background-color: #9ba4b5;
+  color: #0a0f1a;
+  padding: 20px;
+  margin: 140px 10px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 150px;
+  font-weight: 400;
+  border-radius: 5px;
+}
+
+h1 {
+  color: #f1f6f9;
+}
+
+.prayer-container div span {
+  margin: 10px;
+  font-weight: 300;
+}
+
+.preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #333333;
+  z-index: 99999;
+  transition: 1s;
+}
+
+.loader {
+  border: 16px solid #333333;
+  border-top: 16px solid #3498db;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 1s linear infinite;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -60px;
+  margin-left: -60px;
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+select {
+  background-color: #283c66;
+  color: white;
+  font-size: 1rem;
+  font-weight: 400;
+  padding: 10px;
+  width: 180px;
+  border-radius: 10px;
+  text-align: center;
+  border-radius: 2px 2px 0px 0px;
+}
+
+select option {
+  padding: 10px;
+  background: #212a3e;
+  color: white;
+}

@@ -1,1 +1,1 @@
-# Islam-prayer-times
+# Prayer-times
